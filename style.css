@@ -1,0 +1,16 @@
+body{
+    background:linear-gradient(to right bottom, rgb(0, 255, 242), rgb(0, 140, 255), rgb(0, 60, 255)) ;
+}
+
+.items{
+    color:rgb(255, 238, 0);
+    font-size:x-large;
+}
+
+#camera{
+    border-color: white;
+    border-style:dashed;
+    border-width: 5px;
+    width:310px;
+    height:100px;
+}

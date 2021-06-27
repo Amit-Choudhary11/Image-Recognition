@@ -1,0 +1,64 @@
+ 
+<html>
+  <head>
+    <title>Image Recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+   <br>
+   <br>
+      <label  style="font-size: 40px; width: 100%; background-color: crimson; color:darkturquoise;">Image Identifier</label>
+      <br><br>
+
+      <p style="font-size: 25px; font-weight: 900; color:rgb(245, 67, 165)">This Model Can Identify The Following Emotions:</p>
+<b class="items">
+      <br><br>
+Happy
+<hr>
+      <br><br>
+Sad
+<hr>
+      <br><br>
+Angry
+<hr>
+      <br><br>
+ Crying 
+ <hr>  
+ </b>
+      <label style="font-weight: 900; color: white; font-size:x-large;">Webcam View: </label>
+
+      <br><br>
+<div id="camera"></div>
+      <br><br>
+<div id="result"></div>
+      <br><br>
+<button onclick="takeImage()" class="btn btn-success">Take Picture</button>
+
+      <br><br>
+      <button onclick="checkImage()" class="btn btn-success">Indentify Picture</button> 
+      <hr>
+     
+
+      <p style="font-size: 22px; color:white;">Emotion : <span id="emotion"></span>  </p>
+      <p style="font-size: 22px; color:white;">Accuracy : <span id="accuracy"></span>  </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 

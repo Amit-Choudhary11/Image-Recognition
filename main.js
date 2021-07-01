@@ -33,7 +33,7 @@ function gotResult(error, results){
         console.log(error);
     }else{
         console.log(results);
-        document.getElementById("object").innerHTML=results[0].label;
+        document.getElementById("emotion").innerHTML=results[0].label;
         document.getElementById("accuracy").innerHTML=results[0].confidence.toFixed(3);
     }
 }
